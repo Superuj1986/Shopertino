@@ -6,6 +6,7 @@ import Menu from './screens/Menu';
 import Category from './screens/Category';
 import Dresses from './screens/Dresses';
 
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -14,7 +15,7 @@ export default function App() {
       <Stack.Navigator initialRouteName='Menu' screenOptions={{headerShown: false}}>
         <Stack.Screen name='Menu' component={Menu}/>
         <Stack.Screen name='Category' component={Category}/>
-        <Stack.Screen name='Dress' component={Dresses}/>
+        <Stack.Screen name='Dresses' component={Dresses}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
